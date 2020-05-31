@@ -9,13 +9,13 @@ module.exports = async function main(context, req) {
 
 
    context.log('JavaScript HTTP trigger function processed a request.');
-
+   newItem = req.body;
     if (req.query.name || (req.body)) {
         context.res = {
             // status: 200, /* Defaults to 200 */
             body: req.body
         };
-        newItem = req.body;
+        
     }
     else {
         console.log(req);
