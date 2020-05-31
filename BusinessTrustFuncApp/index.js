@@ -18,6 +18,7 @@ module.exports = async function main(context, req) {
         newItem = req.body;
     }
     else {
+        console.log(req);
         context.res = {
             status: 400,
             body: "Could not update"
