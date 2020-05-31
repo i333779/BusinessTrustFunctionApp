@@ -3,14 +3,7 @@ const bodyParser = require("body-parser");
 const config = require("./config");
 const CosmosClient = require('@azure/cosmos').CosmosClient
 const dbContext = require("./data/databaseContext");
-var newItem = 
-{
-    id: "15667",
-    Temperature:  "91",
-    Location: "true",
-    SafetyGear: "1",
-    SafeDistance: "2"
-    };
+var newItem = {};
 
 module.exports = async function main(context, req) {
 
